@@ -3,11 +3,13 @@ Clock Demo Android App
 
 Building Instructions:
 
+0.  `git clone https://github.com/HalCanary/Clock.git`
+
 1.  [Download and install Android Studio](https://developer.android.com/sdk/index.html).
 
 2.  Launch Android Studio and click "Open an existing Android Studio project".
 
-3.  Select this directory.
+3.  Select this directory (`.../Clock/`).
 
 4.  Run app.
 
