@@ -8,7 +8,9 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
+ *  /class CoolClock displays time (and maybe date).
  *
+ *  TODO(you): make this clock cool.
  */
 public class CoolClock extends View {
     private Paint fPaint;
@@ -52,4 +54,16 @@ public class CoolClock extends View {
         this.postInvalidateDelayed(DELAY_MILLISECONDS);
     }
 
+    private static double RadiansFrom60(double angle) {
+        return Math.toRadians(angle * 6 - 90);
+    }
+    private static double RadiansFrom12(double angle) {
+        return Math.toRadians(angle * 30 - 90);
+    }
+    private static float FaceX(double angle, int length, int centerX) {
+        return (float) (length * Math.cos(angle) + centerX);
+    }
+    private static float FaceY(double angle, int length, int centerY) {
+        return (float) (length * Math.sin(angle) + centerY);
+    }
 }
